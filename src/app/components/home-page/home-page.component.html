@@ -1,0 +1,15 @@
+<div class="container">
+
+  <div class="row">
+    <div *ngFor="let item of productList" class="col-3 p-2">
+      <img src="{{item.image}}" class="card-img-top">
+      <div class="card-body">
+        <h5>{{ item.name }}</h5>
+      </div>
+      <div class="card-body">
+        <p class="card-text text-muted">Price: {{item.price}}</p>
+      </div>
+    </div>
+  </div>
+
+</div>
