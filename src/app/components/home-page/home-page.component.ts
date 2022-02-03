@@ -9,6 +9,8 @@ import {ProductItem} from "../../models/product-item";
 })
 export class HomePageComponent implements OnInit {
   productList: ProductItem[] = [];
+  searchKey: string = '';
+  loading = false;
 
   constructor(private _productService: ProductService) { }
 

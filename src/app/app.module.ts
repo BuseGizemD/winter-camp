@@ -8,6 +8,7 @@ import { LoginPageComponent } from './components/login-page/login-page.component
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { RouterModule, Routes} from "@angular/router";
 import {HttpClientModule} from "@angular/common/http";
+import {ProductFilterPipe} from "./pipe/product-filter.pipe";
 
 const appRoutes: Routes = [
   {
@@ -29,7 +30,8 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent,
     LoginPageComponent,
-    HomePageComponent
+    HomePageComponent,
+    ProductFilterPipe
   ],
   imports: [
     BrowserModule,

@@ -10,11 +10,10 @@ import {Router} from "@angular/router";
 export class LoginPageComponent implements OnInit {
   title = 'Login Page - Welcome';
 
-  _loginForm: FormGroup;
+  _loginForm!: FormGroup;
 
   constructor(private _formBuilder: FormBuilder,
               private _router: Router) {
-    this._loginForm = this._formBuilder.group({});
   }
 
   ngOnInit(): void {
